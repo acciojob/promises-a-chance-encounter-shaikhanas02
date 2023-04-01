@@ -3,6 +3,7 @@
   function getRandomNumber() {
     return Math.floor(Math.random() * 10) + 1;
   }
+          const p = document.createElement('p');
 
   // Function to create a promise that resolves to a random number or rejects with an error
   function createPromise() {
@@ -34,7 +35,6 @@
           console.log(`Promise ${index + 1} rejected with error`);
         } else {
           const outputDiv = document.getElementById('output');
-          const p = document.createElement('p');
           p.textContent = `Promise ${index + 1}: ${result}`;
           outputDiv.appendChild(p);
         }
